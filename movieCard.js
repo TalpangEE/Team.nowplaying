@@ -12,19 +12,19 @@ function createMovieCard(movie) {
     const movieTitle = document.createElement('h2');
     movieTitle.classList.add('movie-title');
     movieTitle.textContent = movie.title;
-    //movie 내용 가져오기
+    /*//movie 내용 가져오기
     const movieContent = document.createElement('p');
     movieContent.classList.add('movie-content');
-    movieContent.textContent = movie.overview;
-    //movie 평점 가져오기
+    movieContent.textContent = movie.overview;*/
+    /*movie 평점 가져오기
     const movieRating = document.createElement('p');
     movieRating.classList.add('movie-rating');
-    movieRating.textContent = `평점: ${movie.vote_average}`;
+    movieRating.textContent = `평점: ${movie.vote_average}`;*/
     //card에 각각의 요소를 추가
     card.appendChild(movieImg);
     card.appendChild(movieTitle);
-    card.appendChild(movieContent);
-    card.appendChild(movieRating);
+    /*card.appendChild(movieContent);
+    card.appendChild(movieRating);*/
     // 위 추가된 요소를 card로 return
     return card;
 }
